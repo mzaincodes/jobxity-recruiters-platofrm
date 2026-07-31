@@ -1,0 +1,118 @@
+======== ROLES =======
+1 --> Super Admin
+2 --> Sub Admin
+3 --> Recruiter
+4 --> Client
+5 --> Candidates
+
+
+======== RECRUITER STATUSES =======
+1 --> 
+2 --> 
+3 --> 
+4 --> 
+5 --> 
+
+======== VARIABLES =======
+-> org is saved in the cookie it contanins btoa("jobxityrecruiters") it is send to middleware for api auth
+
+
+
+    <section className="job-detail-section style-three">
+        <div className="upper-box">
+          <div className="auto-container">
+            <div className="job-block-seven style-three">
+              <div className="inner-box">
+                <div className="content">
+                  {/* <span className="company-logo">
+                    <Image
+                      width={100}
+                      height={98}
+                      src={company?.logo}
+                      alt="logo"
+                    />
+                  </span> */}
+                  {/* <h4>{company?.jobTitle}</h4> */}
+
+                  {/* <ul className="job-info">
+                    <li>
+                      <span className="icon flaticon-briefcase"></span>
+                      {company?.company}
+                    </li>
+           
+                    <li>
+                      <span className="icon flaticon-map-locator"></span>
+                      {company?.location}
+                    </li>
+        
+                    <li>
+                      <span className="icon flaticon-clock-3"></span>{" "}
+                      {company?.time}
+                    </li>
+       
+                    <li>
+                      <span className="icon flaticon-money"></span>{" "}
+                      {company?.salary}
+                    </li>
+                  </ul> */}
+                  {/* End .job-info */}
+
+                  {/* <ul className="job-other-info">
+                    {company?.jobType?.map((val, i) => (
+                      <li key={i} className={`${val.styleClass}`}>
+                        {val.type}
+                      </li>
+                    ))}
+                  </ul> */}
+                  {/* End .job-other-info */}
+                </div>
+                {/* End .content */}
+
+                <div className="btn-box">
+                  <a
+                    href="#"
+                    className="theme-btn btn-style-one"
+                    data-bs-toggle="modal"
+                    data-bs-target="#applyJobModal"
+                  >
+                    Apply For Job
+                  </a>
+                  <button className="bookmark-btn">
+                    <i className="flaticon-bookmark"></i>
+                  </button>
+                </div>
+                {/* End apply for job btn */}
+
+                {/* <!-- Modal --> */}
+                <div
+                  className="modal fade"
+                  id="applyJobModal"
+                  tabIndex="-1"
+                  aria-hidden="true"
+                >
+                  <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div className="apply-modal-content modal-content">
+                      <div className="text-center">
+                        <h3 className="title">Apply for this job</h3>
+                        <button
+                          type="button"
+                          className="closed-modal"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      {/* End modal-header */}
+
+                      {/* <ApplyJobModalContent /> */}
+                      {/* End PrivateMessageBox */}
+                    </div>
+                    {/* End .send-private-message-wrapper */}
+                  </div>
+                </div>
+                {/* End .modal */}
+              </div>
+            </div>
+            {/* <!-- Job Block --> */}
+          </div>
+        </div>
+      </section>
